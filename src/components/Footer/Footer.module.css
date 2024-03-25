@@ -1,0 +1,102 @@
+.footerContainer {
+  text-align: center;
+  position: relative;
+}
+.footerBgImg {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: -30px;
+}
+.footerImg {
+  width: 100vw;
+  transform: translateY(10px);
+}
+.footerWrapper {
+  background-color: #061428;
+}
+.footerTitle {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+.footerForm {
+  padding-bottom: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputField {
+  width: 300px;
+  height: 48px;
+  flex-shrink: 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 20px;
+  color: #64647a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 20px;
+}
+.selectField {
+  width: 300px;
+  height: 48px;
+  flex-shrink: 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 20px;
+  color: #64647a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../../../public/assets/images/down-chevron.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 96%;
+}
+.footerDivision {
+  width: 100%;
+  height: 1px;
+  margin-top: 50px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper {
+    padding: 0px 24px;
+  }
+  .footerBgImg {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: -10px;
+    width: 65px;
+  }
+  .footerTitle {
+    padding-top: 32px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  .footerForm {
+    flex-direction: column;
+  }
+  .inputField,
+  .selectField {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

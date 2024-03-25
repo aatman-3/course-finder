@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Buenos Aires";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* 900  */
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("../public/assets/fonts/BuenosAires-Bold.eot");
+  src: local("Buenos Aires Bold"), local("BuenosAires-Bold"),
+    url("../public/assets/fonts/BuenosAires-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/assets/fonts/BuenosAires-Bold.woff2") format("woff2"),
+    url("../public/assets/fonts/BuenosAires-Bold.woff") format("woff"),
+    url("../public/assets/fonts/BuenosAires-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 400  */
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("../public/assets/fonts/BuenosAires-Regular.eot");
+  src: local("Buenos Aires Regular"), local("BuenosAires-Regular"),
+    url("../public/assets/fonts/BuenosAires-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/assets/fonts/BuenosAires-Regular.woff2") format("woff2"),
+    url("../public/assets/fonts/BuenosAires-Regular.woff") format("woff"),
+    url("../public/assets/fonts/BuenosAires-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("../public/assets/fonts/BuenosAires-SemiBold.eot");
+  src: local("Buenos Aires SemiBold"), local("BuenosAires-SemiBold"),
+    url("../public/assets/fonts/BuenosAires-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/assets/fonts/BuenosAires-SemiBold.woff2") format("woff2"),
+    url("../public/assets/fonts/BuenosAires-SemiBold.woff") format("woff"),
+    url("../public/assets/fonts/BuenosAires-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Buenos Aires";
+  src: url("../public/assets/fonts/BuenosAires-Light.eot");
+  src: local("Buenos Aires Light"), local("BuenosAires-Light"),
+    url("../public/assets/fonts/BuenosAires-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/assets/fonts/BuenosAires-Light.woff2") format("woff2"),
+    url("../public/assets/fonts/BuenosAires-Light.woff") format("woff"),
+    url("../public/assets/fonts/BuenosAires-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* common  */
+.whiteCircle {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: auto 10px;
+}
+/* Desktop  */
+@media screen and (min-width: 769px) {
+  .only-mobile {
+    display: none;
+  }
+}
+/* Mobile  */
+@media screen and (max-width: 768px) {
+  .only-desktop {
+    display: none;
+  }
 }

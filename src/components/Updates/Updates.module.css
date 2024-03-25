@@ -1,0 +1,123 @@
+.updatesContainer {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.mainCardContainer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 50px;
+  border-radius: 10px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 320px 320px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+.mainCardTitle {
+  color: #0e1b2c;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+.mainCardSubtitle {
+  color: #0e1b2c;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.cardContainer {
+  padding: 70px 24px;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: -5px 4px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.cardContainer:not(:last-child) {
+  margin-right: 30px;
+}
+.cardImg {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  margin-bottom: 26px;
+}
+.cardHeader {
+  color: #0e1b2c;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.cardImg2 {
+  margin-top: 18px;
+  margin-bottom: 40px;
+}
+.cardTitle {
+  color: #226cf5;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.cardSubtitle {
+  color: #15158c;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.ctaContainer {
+  margin-top: 32px;
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .updatesContainer {
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    background-color: #fff;
+  }
+  .mainCardContainer {
+    width: calc(100vw - 72px);
+    flex-shrink: 0;
+    padding: 50px 30px;
+    margin-right: 20px;
+    background-size: 280px 280px;
+  }
+  .mainCardTitle {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .mainCardSubtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .cardContainer:not(:last-child) {
+    margin-right: 20px;
+  }
+  .cardContainer {
+    width: calc(100vw - 72px);
+    flex-shrink: 0;
+  }
+  .ctaContainer {
+    margin-top: 12px;
+  }
+}

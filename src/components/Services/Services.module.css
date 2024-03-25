@@ -1,0 +1,131 @@
+.cardsListContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 20px 30px;
+  margin-bottom: 40px;
+}
+.serviceCard {
+  padding: 26px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fff;
+  filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.1));
+}
+.serviceCardImg {
+  margin-right: 24px;
+}
+.serviceCardTitle {
+  color: #0e1b2c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ambitionsContainer {
+  margin-top: 76px;
+  display: flex;
+  flex-direction: row;
+}
+.ambitionsImg {
+  background-color: #ffe7c9;
+  height: 400px;
+  width: 450px;
+  position: relative;
+  flex-grow: 1;
+  border-radius: 8px;
+}
+.ambitionsImg img {
+  height: 400px;
+  width: 450px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.ambitionsListContainer {
+  margin: auto auto auto 100px;
+}
+.ambitionsTitle {
+  color: #0e1b2c;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 18px;
+}
+.ambitionsSubtitle {
+  color: #0e1b2c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.ambition {
+  color: #0e1b2c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.ambitionsListImg {
+  margin-bottom: -20px;
+  margin-right: 22px;
+}
+.ambitionText {
+  color: #0e1b2c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .servicesContainer {
+    padding: 0px 24px;
+  }
+  .cardsListContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .serviceCardTitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .ambitionsContainer {
+    flex-direction: column;
+  }
+  .ambitionsImg {
+    width: calc(100vw - 80px);
+    height: 290px;
+    margin-bottom: 32px;
+  }
+  .ambitionsImg img {
+    width: calc(100vw - 80px);
+    height: 290px;
+  }
+  .ambitionsListContainer {
+    margin: 32px 0px 0px 0px;
+    text-align: left;
+  }
+  .ambitionsTitle {
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .ambitionsSubtitle {
+    font-weight: 350;
+  }
+}

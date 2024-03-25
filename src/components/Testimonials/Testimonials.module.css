@@ -1,0 +1,134 @@
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testimonialsWrapper {
+  flex-grow: 1;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding-top: 64px;
+}
+.testimonialsContainer {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease;
+}
+.testimonialCard {
+  width: 368px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #fff;
+  /* filter: drop-shadow(0px 6px 50px rgba(0, 0, 0, 0.1)); */
+  border-radius: 10px;
+  text-align: left;
+  padding: 32px;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardImg {
+  margin-bottom: 24px;
+}
+.cardDescription {
+  color: #0e1b2c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+.cardTitle {
+  color: #0e1b2c;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.cardSubtitle {
+  color: #64647a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.leftChevron {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-right: 12px;
+  z-index: 2;
+}
+.rightChevron {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-left: 12px;
+  z-index: 2;
+}
+.circleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0px 12px;
+  margin-top: 50px;
+}
+.circle {
+  height: 6px;
+  width: 6px;
+  background-color: #0e1b2c;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+.activeCircle {
+  height: 10px;
+  width: 10px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    position: relative;
+  }
+  .testimonialsWrapper {
+    padding-top: 0px;
+  }
+  .testimonialsContainer {
+    gap: 0px 64px;
+    padding: 0px 32px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+  }
+  .testimonialCard {
+    margin-right: 0px;
+    width: calc(100vw - 64px);
+    filter: none;
+  }
+  .cardDescription {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .cardTitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .rightChevron {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: calc(100vw - 62px);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .leftChevron {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
